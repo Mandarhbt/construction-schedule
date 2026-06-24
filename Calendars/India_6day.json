@@ -1,0 +1,16 @@
+{
+    "CalendarName": "India_6Day",
+    "WorkingDays": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+    ],
+    "Holidays": [
+        "2026-01-26",
+        "2026-08-15",
+        "2026-10-02"
+    ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "ID": 1,
+    "Activity": "Mobilization",
+    "Duration": 10,
+    "Predecessor": ""
+  },
+  {
+    "ID": 2,
+    "Activity": "Excavation",
+    "Duration": 25,
+    "Predecessor": 1
+  },
+  {
+    "ID": 3,
+    "Activity": "Foundation",
+    "Duration": 20,
+    "Predecessor": 2
+  },
+  {
+    "ID": 4,
+    "Activity": "Hospital Structure",
+    "Duration": 60,
+    "Predecessor": 3
+  },
+  {
+    "ID": 5,
+    "Activity": "MEP Works",
+    "Duration": 45,
+    "Predecessor": 4
+  },
+  {
+    "ID": 6,
+    "Activity": "Medical Equipment Installation",
+    "Duration": 40,
+    "Predecessor": 5
+  }
+]

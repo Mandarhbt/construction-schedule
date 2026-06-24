@@ -1,0 +1,13 @@
+{
+    "CalendarName": "My Calendar",
+    "WorkingDays": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+    ],
+    "Holidays": [
+        "2026-06-17"
+    ]
+}

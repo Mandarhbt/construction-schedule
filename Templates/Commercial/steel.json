@@ -1,0 +1,38 @@
+[
+  {
+    "ID": 1,
+    "Activity": "Mobilization",
+    "Duration": 7,
+    "Predecessor": ""
+  },
+  {
+    "ID": 2,
+    "Activity": "Excavation",
+    "Duration": 15,
+    "Predecessor": 1
+  },
+  {
+    "ID": 3,
+    "Activity": "Foundation",
+    "Duration": 10,
+    "Predecessor": 2
+  },
+  {
+    "ID": 4,
+    "Activity": "Steel Fabrication",
+    "Duration": 30,
+    "Predecessor": 3
+  },
+  {
+    "ID": 5,
+    "Activity": "Steel Erection",
+    "Duration": 25,
+    "Predecessor": 4
+  },
+  {
+    "ID": 6,
+    "Activity": "Facade Works",
+    "Duration": 15,
+    "Predecessor": 5
+  }
+]

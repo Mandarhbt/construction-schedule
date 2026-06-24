@@ -1,0 +1,44 @@
+[
+  {
+    "ID": 1,
+    "Activity": "Mobilization",
+    "Duration": 5,
+    "Predecessor": ""
+  },
+  {
+    "ID": 2,
+    "Activity": "Excavation",
+    "Duration": 12,
+    "Predecessor": 1
+  },
+  {
+    "ID": 3,
+    "Activity": "Foundation",
+    "Duration": 8,
+    "Predecessor": 2
+  },
+  {
+    "ID": 4,
+    "Activity": "Steel Fabrication",
+    "Duration": 20,
+    "Predecessor": 3
+  },
+  {
+    "ID": 5,
+    "Activity": "Steel Erection",
+    "Duration": 15,
+    "Predecessor": 4
+  },
+  {
+    "ID": 6,
+    "Activity": "Roof Deck Installation",
+    "Duration": 8,
+    "Predecessor": 5
+  },
+  {
+    "ID": 7,
+    "Activity": "Finishing",
+    "Duration": 15,
+    "Predecessor": 6
+  }
+]

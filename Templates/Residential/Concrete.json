@@ -1,0 +1,44 @@
+[
+  {
+    "ID": 1,
+    "Activity": "Mobilization",
+    "Duration": 5,
+    "Predecessor": ""
+  },
+  {
+    "ID": 2,
+    "Activity": "Excavation",
+    "Duration": 15,
+    "Predecessor": 1
+  },
+  {
+    "ID": 3,
+    "Activity": "PCC",
+    "Duration": 3,
+    "Predecessor": 2
+  },
+  {
+    "ID": 4,
+    "Activity": "Footing RCC",
+    "Duration": 10,
+    "Predecessor": 3
+  },
+  {
+    "ID": 5,
+    "Activity": "Column RCC",
+    "Duration": 8,
+    "Predecessor": 4
+  },
+  {
+    "ID": 6,
+    "Activity": "Slab RCC",
+    "Duration": 10,
+    "Predecessor": 5
+  },
+  {
+    "ID": 7,
+    "Activity": "Finishing",
+    "Duration": 20,
+    "Predecessor": 6
+  }
+]
