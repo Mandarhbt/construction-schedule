@@ -127,11 +127,15 @@ def render_wbs_table(df, data_cols, wbs_col="WBS"):
 st.set_page_config(page_title="Construction Scheduler", layout="wide", initial_sidebar_state="collapsed")
 
 # ── Sidebar toggle prominence ──────────────────────────────────────────────────
+# Targets both old (<1.35: collapsedControl) and new (>=1.35: stExpandSidebarButton) Streamlit versions
 st.markdown(
     """
     <style>
-    /* Sidebar collapse/expand arrow button */
-    [data-testid="collapsedControl"] {
+    /* Sidebar expand button — works across all Streamlit versions:
+       - <1.35 : data-testid="collapsedControl"
+       - >=1.35 : data-testid="stExpandSidebarButton"           */
+    [data-testid="collapsedControl"],
+    [data-testid="stExpandSidebarButton"] {
         background: #38bdf8 !important;       /* light blue */
         border-radius: 50% !important;
         width: 2.4rem !important;
@@ -143,12 +147,14 @@ st.markdown(
         animation: pulse-sidebar 2.4s ease-in-out infinite;
         top: 0.65rem !important;
     }
-    [data-testid="collapsedControl"] svg {
+    [data-testid="collapsedControl"] svg,
+    [data-testid="stExpandSidebarButton"] svg {
         stroke: #ffffff !important;
         width: 1.2rem !important;
         height: 1.2rem !important;
     }
-    [data-testid="collapsedControl"]::after {
+    [data-testid="collapsedControl"]::after,
+    [data-testid="stExpandSidebarButton"]::after {
         content: "Menu";
         position: absolute;
         left: 2.8rem;
@@ -166,7 +172,8 @@ st.markdown(
         opacity: 0;
         transition: opacity 0.2s;
     }
-    [data-testid="collapsedControl"]:hover::after {
+    [data-testid="collapsedControl"]:hover::after,
+    [data-testid="stExpandSidebarButton"]:hover::after {
         opacity: 1;
     }
     @keyframes pulse-sidebar {
