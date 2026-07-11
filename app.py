@@ -244,6 +244,10 @@ with st.sidebar:
             I am sure this will save a lot of time for construction schedulers in initial 
             schedule preparation and they can focus on more important activities.
 
+            > **Note:** The current version intentionally limits the number of AI-generated activities
+            to optimize OpenAI API token usage and keep operating costs low. The underlying architecture
+            is designed to scale to full-fledged construction schedules and can be expanded significantly
+            when needed.
 
             **Developed by:** Mandar  
             **Version:** v0.1.1  
